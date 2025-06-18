@@ -3,7 +3,8 @@
 #include "Counter.g.h"
 #include "CounterViewModel.h"
 
-namespace TheApp {
+namespace TheApp
+{
 	[Windows::Foundation::Metadata::WebHostHidden]
 	public ref class Counter sealed
 	{
@@ -19,12 +20,12 @@ namespace TheApp {
 		}
 
 		property int InitialCount
-		{			
+		{
 			void set(int value);
 		}
 
 		property String^ BtnLabel
-		{			
+		{
 			void set(String^ value);
 		}
 	};

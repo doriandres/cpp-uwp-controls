@@ -10,7 +10,7 @@ namespace TheApp
     public delegate void ExecuteDelegate(Object^ parameter);
     public delegate bool CanExecuteDelegate(Object^ parameter);    
 
-    public ref class RelayCommand sealed : ICommand
+    public ref class TheCommand sealed : ICommand
     {
     private:
 		ExecuteDelegate^ m_execute;
@@ -18,8 +18,8 @@ namespace TheApp
 
     public:
 
-        RelayCommand(ExecuteDelegate^ execute, CanExecuteDelegate^ canExecute);
-        RelayCommand(ExecuteDelegate^ execute);
+        TheCommand(ExecuteDelegate^ execute, CanExecuteDelegate^ canExecute);
+        TheCommand(ExecuteDelegate^ execute);
 
         virtual event Windows::Foundation::EventHandler<Object^>^ CanExecuteChanged;
         virtual bool CanExecute(Object^ parameter);

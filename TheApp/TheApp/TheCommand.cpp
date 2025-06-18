@@ -1,22 +1,22 @@
 #pragma once
 #include "pch.h"
-#include "RelayCommand.h"
+#include "TheCommand.h"
 
 using namespace Platform;
 using namespace Windows::UI::Xaml::Input;
 
 namespace TheApp
 {
-	RelayCommand::RelayCommand(ExecuteDelegate^ execute, CanExecuteDelegate^ canExecute)
+	TheCommand::TheCommand(ExecuteDelegate^ execute, CanExecuteDelegate^ canExecute)
 		: m_execute(execute), m_canExecute(canExecute)
 	{
 	}
 
-	RelayCommand::RelayCommand(ExecuteDelegate^ execute) : m_execute(execute)
+	TheCommand::TheCommand(ExecuteDelegate^ execute) : m_execute(execute)
 	{		
 	}
 
-	bool RelayCommand::CanExecute(Object^ parameter)
+	bool TheCommand::CanExecute(Object^ parameter)
 	{
 		if (m_canExecute)
 		{
@@ -25,7 +25,7 @@ namespace TheApp
 		return true;
 	}
 
-	void RelayCommand::Execute(Object^ parameter)
+	void TheCommand::Execute(Object^ parameter)
 	{
 		if (m_execute)
 		{

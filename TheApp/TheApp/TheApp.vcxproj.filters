@@ -26,7 +26,7 @@
     <ClCompile Include="CounterViewModel.cpp">
       <Filter>ViewModels</Filter>
     </ClCompile>
-    <ClCompile Include="RelayCommand.cpp">
+    <ClCompile Include="TheCommand.cpp">
       <Filter>Commands</Filter>
     </ClCompile>
     <ClCompile Include="TheBaseViewModel.cpp">
@@ -39,7 +39,7 @@
     <ClInclude Include="CounterViewModel.h">
       <Filter>ViewModels</Filter>
     </ClInclude>
-    <ClInclude Include="RelayCommand.h">
+    <ClInclude Include="TheCommand.h">
       <Filter>Commands</Filter>
     </ClInclude>
     <ClInclude Include="TheBaseViewModel.h">

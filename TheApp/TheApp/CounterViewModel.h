@@ -1,7 +1,7 @@
 #pragma once
 #include "pch.h"
 #include "TheBaseViewModel.h"
-#include "RelayCommand.h"
+#include "TheCommand.h"
 
 using namespace Platform;
 using namespace Windows::UI::Xaml::Data;
@@ -14,7 +14,7 @@ namespace TheApp
 		int m_count;
 		String^ m_increaseBtnLabel;
 
-		RelayCommand^ m_increaseCountCommand;
+		TheCommand^ m_increaseCountCommand;
 
 		void IncreaseCount();	
 
@@ -33,9 +33,9 @@ namespace TheApp
 			void set(String^ value);
 		}
 
-		property RelayCommand^ IncreaseCountCommand
+		property TheCommand^ IncreaseCountCommand
 		{
-			RelayCommand^ get();
+			TheCommand^ get();
 		}		
 	};
 }

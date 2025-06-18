@@ -1,6 +1,6 @@
 #pragma once
 #include "pch.h"
-#include "RelayCommand.h"
+#include "TheCommand.h"
 
 using namespace Platform;
 using namespace Windows::UI::Xaml::Data;

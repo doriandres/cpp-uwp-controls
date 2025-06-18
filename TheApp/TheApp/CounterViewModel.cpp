@@ -16,7 +16,7 @@ namespace TheApp
 	{
 		m_count = 0;
 		m_increaseBtnLabel = "Increase";
-		m_increaseCountCommand = ref new RelayCommand(
+		m_increaseCountCommand = ref new TheCommand(
 			ref new ExecuteDelegate([this](Object^ parameter) 
 			{
 				this->IncreaseCount();
@@ -24,7 +24,7 @@ namespace TheApp
 		);
 	}
 
-	RelayCommand^ CounterViewModel::IncreaseCountCommand::get()
+	TheCommand^ CounterViewModel::IncreaseCountCommand::get()
 	{
 		return m_increaseCountCommand;
 	}

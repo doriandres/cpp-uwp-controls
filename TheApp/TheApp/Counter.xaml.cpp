@@ -19,7 +19,6 @@ namespace TheApp
 	Counter::Counter()
 	{
 		InitializeComponent();
-		this->DataContext = this;		
 		m_viewModel = ref new CounterViewModel();		
 	}
 

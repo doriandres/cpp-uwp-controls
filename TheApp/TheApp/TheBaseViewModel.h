@@ -8,7 +8,7 @@ using namespace Windows::UI::Xaml;
 
 namespace TheApp
 {
-	public ref class TheBaseNotifyPropertyChanged : public DependencyObject, public INotifyPropertyChanged
+	public ref class TheBaseViewModel : public DependencyObject, public INotifyPropertyChanged
 	{	
 	protected:
 		void OnPropertyChanged(String^ propertyName);

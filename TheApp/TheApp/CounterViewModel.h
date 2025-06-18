@@ -1,6 +1,6 @@
 #pragma once
 #include "pch.h"
-#include "TheBaseNotifyPropertyChanged.h"
+#include "TheBaseViewModel.h"
 #include "RelayCommand.h"
 
 using namespace Platform;
@@ -8,7 +8,7 @@ using namespace Windows::UI::Xaml::Data;
 
 namespace TheApp
 {
-	public ref class CounterViewModel sealed : public TheBaseNotifyPropertyChanged
+	public ref class CounterViewModel sealed : public TheBaseViewModel
 	{
 	private:
 		int m_count;

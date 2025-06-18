@@ -142,7 +142,7 @@
     </ClInclude>
     <ClInclude Include="RelayCommand.h" />
     <ClInclude Include="resource.h" />
-    <ClInclude Include="TheBaseNotifyPropertyChanged.h" />
+    <ClInclude Include="TheBaseViewModel.h" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -189,7 +189,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="RelayCommand.cpp" />
-    <ClCompile Include="TheBaseNotifyPropertyChanged.cpp" />
+    <ClCompile Include="TheBaseViewModel.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="TheApp.rc" />

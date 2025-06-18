@@ -29,7 +29,7 @@
     <ClCompile Include="RelayCommand.cpp">
       <Filter>Commands</Filter>
     </ClCompile>
-    <ClCompile Include="TheBaseNotifyPropertyChanged.cpp">
+    <ClCompile Include="TheBaseViewModel.cpp">
       <Filter>Common</Filter>
     </ClCompile>
   </ItemGroup>
@@ -42,7 +42,7 @@
     <ClInclude Include="RelayCommand.h">
       <Filter>Commands</Filter>
     </ClInclude>
-    <ClInclude Include="TheBaseNotifyPropertyChanged.h">
+    <ClInclude Include="TheBaseViewModel.h">
       <Filter>Common</Filter>
     </ClInclude>
   </ItemGroup>
